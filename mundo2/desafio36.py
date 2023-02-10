@@ -1,0 +1,20 @@
+print('-='* 30)
+print('Esse é um programa de empréstimo bancário!')
+print('-='* 30)
+casa = float(input('Digite o valor da casa: '))
+salario = float(input('Digite o valor do seu sálario: '))
+anos = float(input('Em quantos anos vai pagar? '))
+anosconvertido = anos * 12 
+pagamento = (salario * 30 / 100) 
+prestação = (casa / anosconvertido)
+print('-='* 30)
+print(f'Esse são os anos de pagamento convertido em meses: {anosconvertido}')
+print('-='* 30)
+print(f'Esse é o valor que pagará nas parcelas ao longo dos anos: {prestação}')
+print('-='* 30)
+print(f'Esse é o valor calculado de 30% de seu salário {pagamento}')
+print('-='* 30)
+if pagamento >= prestação:
+    print('Você está apto a comprar a casa!')
+else:
+    print('Você não está apto a comprar a casa!')         
